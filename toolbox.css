@@ -766,24 +766,34 @@ background-color: #FA8072;
     background-color: #fafafa;
 }
 
+.reason-popup input[type="checkbox"] {
+	margin-top: 0 !important;
+}
+
 .reason-popup textarea {
     min-width: 400px;
 }
 
 .reason-popup tbody tr {
+	margin-top: 2px;
     vertical-align: top;
     border-bottom: 1px solid rgb(187, 187, 187);
     font-size: 115%;
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 }
+
 .reason-popup tbody tr td, .reason-popup thead tr th {
-	padding: 5px;
+	padding: 3px;
+}
+
+.reason-popup tbody tr td p {
+	margin-top: 2px;
 }
 
 .reason-popup thead th {
     white-space: nowrap;
 	font-weight: bold;
-	 border-bottom: 1px dotted rgb(187, 187, 187);
+	border-bottom: 1px dotted rgb(187, 187, 187);
 }
 
 .reason-popup .buttons {
@@ -804,6 +814,14 @@ background-color: #FA8072;
 
 .reason-popup .reason-popup-content span p {
     padding: 3px !important;
+}
+
+.reason-popup strong {
+	font-weight: bold;
+}
+
+.reason-popup em {
+	font-style: oblique;
 }
 
 body .choice.dashed {
@@ -986,6 +1004,56 @@ background-color: #CEE3F8;
 
 .moderator-table tr:nth-child(even), .banned-table tr:nth-child(even), .contributor-table tr:nth-child(even) {
 background: #F5F5F5;
+}
+
+/* Modtools mod page-only CSS */
+
+body.mod-page .subscription-box .option.active {
+	font-size: 0;
+	display: inline-block !important;
+	width: 10px;
+	height: 10px;
+	padding: 2px
+}
+body.mod-page .subscription-box .option.add {
+	background-color: #7BB850;
+	background-position: 3px 3px;
+	background-repeat: no-repeat;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAIAAABV+fA3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABrSURBVBhXY6zeEcAAATwx+dYW147m7P4CFWD6/58BjoAAmcvEyPgfhkByjIz/4CIMVYfXvPqPCZ7sPxzAWLnVH6QeCHhiC+0srh7K2vUFbALIvr//oAhsIUgPTISJ4R8DFP0FKwaSEO4/BgA35Fw9UX68TAAAAABJRU5ErkJggg==");
+}
+body.mod-page .subscription-box .option.remove {
+	background-color: #C85F63;
+	background-position: 3px 5px;
+	background-repeat: no-repeat;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAACCAIAAAAb/VE3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAdSURBVBhXYzyXmMoABoxg8j+YZDg/8/x/NPB8KwA1RRZZO8v/6AAAAABJRU5ErkJggg==");
+}
+body.mod-page .subscription-box ul {
+	clear: both
+}
+body.mod-page .subscription-box li {
+	margin-bottom: 2px;
+}
+body.mod-page .subscription-box li a:last-child {
+	float: right;
+}
+body.mod-page .subscription-box li a[count="100"]:after {
+	content: "+";
+}
+body.mod-page .thing {
+	overflow: hidden;
+	margin-left:0 !important;
+	padding-left: 0px !important;
+}*/
+body.mod-page .midcol {
+	margin-left: 2px !important;
+	/*width: auto !important;*/
+}
+body.mod-page a.pretty-button:focus {
+	box-shadow: 0 0 5px rgba(0,0,255,1);
+}
+body.mod-page .thing {
+	margin-bottom: 2px;
+	padding: 2px 0;
 }
 
 /* mod log matrix */
